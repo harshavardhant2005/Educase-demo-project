@@ -1,4 +1,5 @@
 import React from 'react'
+import { NavLink } from 'react-router-dom'
 
 const CreateAccount = () => {
   return (
@@ -79,7 +80,9 @@ const CreateAccount = () => {
     </main>
 
     <footer className='ml-[16px] items-end absolute left-0 bottom-[30px]'>
+      <NavLink to={"/accountsettings"}>
       <button className='h-[34px] w-[253px] bg-[#6C25FF] text-[white] rounded-[3px] font-semibold text-[14px] cursor-pointer'>Create Account</button>
+      </NavLink>
     </footer>
 
   </section>

@@ -1,4 +1,5 @@
 import React from 'react'
+import { NavLink } from 'react-router-dom'
 
 const Login = () => {
   return (
@@ -45,7 +46,9 @@ const Login = () => {
     </main>
 
     <footer className='ml-[16px] items-end mt-[10px]'>
-      <button className='h-[34px] w-[253px] bg-[#CEBAFB] text-[white] rounded-[3px] font-semibold text-[14px] cursor-pointer'>Login</button>
+      <NavLink to={"/accountsettings"}>
+      <button  className='h-[34px] w-[253px] bg-[#CEBAFB] text-[white] rounded-[3px] font-semibold text-[14px] cursor-pointer'>Login</button>
+      </NavLink>
     </footer>
 
   </section>

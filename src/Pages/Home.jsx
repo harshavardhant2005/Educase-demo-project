@@ -1,4 +1,5 @@
 import React from 'react'
+import { NavLink, Outlet } from 'react-router-dom'
 
 const Home = () => {
   return (
@@ -18,12 +19,11 @@ const Home = () => {
         </article>
 
         <footer className='px-[16px] flex gap-[8px] mt-[20px] flex-col mb-[30px]'>
-            <button className='h-[34px] w-[253px] bg-[#6C25FF] text-[white] rounded-[3px] font-semibold text-[14px] cursor-pointer'>Create Account</button> 
-            <button className='h-[34px] w-[253px] bg-[#CEBAFB] rounded-[3px] font-semibold text-[14px] cursor-pointer'>Already Registered? Login</button>
+            <NavLink to={"/login"} className='flex justify-center items-center h-[34px] w-[253px] bg-[#6C25FF] text-[white] rounded-[3px] font-semibold text-[14px] cursor-pointer'>Create Account</NavLink> 
+            <NavLink to={"/createaccount"} className=' flex justify-center items-center h-[34px] w-[253px] bg-[#CEBAFB] rounded-[3px] font-semibold text-[14px] cursor-pointer'>Already Registered? Login</NavLink>
         </footer>
         
         </main>
-        
 
     </div>
   )
